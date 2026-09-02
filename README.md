@@ -1,5 +1,8 @@
 # UniVAMP
 
+
+![UniVAMP](uma_cover_light.png)
+
 VAMP (CPU sampling-based planner) seeding cuRobo (GPU trajectory optimization) on the NVIDIA
 Jetson Thor's unified memory. VAMP-RRTC replaces cuRobo's PRM graph planner as the TrajOpt
 *seeder*: the CPU path lands in a `cudaMallocManaged` buffer and a fused kernel expands it
