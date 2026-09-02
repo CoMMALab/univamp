@@ -1,0 +1,27 @@
+\subsection{Setup}
+We evaluate on the MotionBenchMaker (MBM) benchmark using UR5, Panda, and Baxter
+($N{=}2858$ problems). All methods use identical joint-space planning problems, robot
+models, joint limits, and time budgets, with one attempt per problem; the exception is
+PRM, which receives cuRobo's stock five-attempt budget, as its dominant failure mode is
+returning no seed at all and its roadmap draw is stochastic. We vary only the seed
+supplied to cuRobo TrajOpt: linear interpolation (LERP), cuRobo's PRM fallback, or a
+CPU-generated VAMP-RRTC path transferred through CUDA managed memory. Success requires a
+dynamically feasible, time-parameterized trajectory.~\cref{fig:exp1_headline} reports
+success rate, planning time, and joint-space path length, while~\cref{fig:fig_phase_breakdown}
+decomposes runtime by phase.
+
+VAMP-RRTC seeding achieves a pooled success rate of 74.1\%, compared with 67.3\% for LERP
+and 65.9\% for PRM, with mean planning times of 305, 292, and 621\,ms, respectively. The
+largest gains occur for UR5 (27.0\% to 38.2\%) and Panda (83.3\% to 98.9\%); Baxter improves
+marginally from 78.6\% to 79.3\%, as its remaining failures are predominantly dynamic rather
+than geometric. Successful VAMP-seeded trajectories are 1--2\% longer than LERP trajectories
+(4.56 vs.\ 4.50\,rad), although this comparison is conservative because each mean is computed
+over the problems successfully solved by that method.
+
+VAMP-RRTC requires 14.7\,ms for seeding, compared with 266.4\,ms for PRM across its five
+draws. Transferring the CPU-generated seed to the GPU costs only 0.41\,ms, or 0.13\% of total
+planning time. TrajOpt runtime is effectively unchanged relative to LERP (289.4 vs.\
+291.8\,ms), indicating that the improved success rate results from better initialization
+rather than additional optimization. Thus, managed memory enables a high-quality CPU seeder
+with negligible transfer overhead, outperforming cuRobo's GPU PRM seed in success rate at
+roughly half its total planning time, though PRM's budget spans five attempts.

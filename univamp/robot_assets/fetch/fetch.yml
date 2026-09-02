@@ -1,0 +1,282 @@
+robot_cfg:
+  kinematics:
+    format_version: 2.0
+    urdf_path: /home/scoumar/Work/univamp/univamp/robot_assets/fetch/fetch_curobo.urdf
+    asset_root_path: ''
+    base_link: base_link
+    tool_frames: [gripper_link]
+    collision_link_names: [base_link, torso_lift_link, torso_lift_link_collision_2,
+      head_pan_link, shoulder_pan_link, shoulder_lift_link, upperarm_roll_link, elbow_flex_link,
+      forearm_roll_link, wrist_flex_link, wrist_roll_link, gripper_link, r_gripper_finger_link,
+      l_gripper_finger_link, torso_fixed_link]
+    collision_spheres:
+      base_link:
+      - center: [-0.12, 0.0, 0.182]
+        radius: 0.24
+      - center: [0.225, 0.0, 0.31]
+        radius: 0.066
+      - center: [0.08, -0.06, 0.16]
+        radius: 0.22
+      - center: [0.215, -0.07, 0.31]
+        radius: 0.066
+      - center: [0.185, -0.135, 0.31]
+        radius: 0.066
+      - center: [0.13, -0.185, 0.31]
+        radius: 0.066
+      - center: [0.065, -0.2, 0.31]
+        radius: 0.066
+      - center: [0.01, -0.2, 0.31]
+        radius: 0.066
+      - center: [0.08, 0.06, 0.16]
+        radius: 0.22
+      - center: [0.215, 0.07, 0.31]
+        radius: 0.066
+      - center: [0.185, 0.135, 0.31]
+        radius: 0.066
+      - center: [0.13, 0.185, 0.31]
+        radius: 0.066
+      - center: [0.065, 0.2, 0.31]
+        radius: 0.066
+      - center: [0.01, 0.2, 0.31]
+        radius: 0.066
+      torso_lift_link:
+      - center: [-0.1, -0.05, 0.15]
+        radius: 0.15
+      - center: [-0.1, 0.05, 0.15]
+        radius: 0.15
+      - center: [-0.1, 0.05, 0.3]
+        radius: 0.15
+      - center: [-0.1, 0.05, 0.45]
+        radius: 0.15
+      - center: [-0.1, -0.05, 0.45]
+        radius: 0.15
+      - center: [-0.1, -0.05, 0.3]
+        radius: 0.15
+      torso_lift_link_collision_2:
+      - center: [0.1, 0.0, 0.24]
+        radius: 0.07
+      head_pan_link:
+      - center: [0.0, 0.0, 0.06]
+        radius: 0.15
+      - center: [0.145, 0.0, 0.058]
+        radius: 0.05
+      - center: [0.145, -0.0425, 0.058]
+        radius: 0.05
+      - center: [0.145, 0.0425, 0.058]
+        radius: 0.05
+      - center: [0.145, 0.085, 0.058]
+        radius: 0.05
+      - center: [0.145, -0.085, 0.058]
+        radius: 0.05
+      - center: [0.0625, -0.115, 0.03]
+        radius: 0.03
+      - center: [0.088, -0.115, 0.03]
+        radius: 0.03
+      - center: [0.1135, -0.115, 0.03]
+        radius: 0.03
+      - center: [0.139, -0.115, 0.03]
+        radius: 0.03
+      - center: [0.0625, -0.115, 0.085]
+        radius: 0.03
+      - center: [0.088, -0.115, 0.085]
+        radius: 0.03
+      - center: [0.1135, -0.115, 0.085]
+        radius: 0.03
+      - center: [0.139, -0.115, 0.085]
+        radius: 0.03
+      - center: [0.16, -0.115, 0.075]
+        radius: 0.03
+      - center: [0.168, -0.115, 0.0575]
+        radius: 0.03
+      - center: [0.16, -0.115, 0.04]
+        radius: 0.03
+      - center: [0.0625, 0.115, 0.03]
+        radius: 0.03
+      - center: [0.088, 0.115, 0.03]
+        radius: 0.03
+      - center: [0.1135, 0.115, 0.03]
+        radius: 0.03
+      - center: [0.139, 0.115, 0.03]
+        radius: 0.03
+      - center: [0.0625, 0.115, 0.085]
+        radius: 0.03
+      - center: [0.088, 0.115, 0.085]
+        radius: 0.03
+      - center: [0.1135, 0.115, 0.085]
+        radius: 0.03
+      - center: [0.139, 0.115, 0.085]
+        radius: 0.03
+      - center: [0.16, 0.115, 0.075]
+        radius: 0.03
+      - center: [0.168, 0.115, 0.0575]
+        radius: 0.03
+      - center: [0.16, 0.115, 0.04]
+        radius: 0.03
+      shoulder_pan_link:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.025, -0.015, 0.035]
+        radius: 0.055
+      - center: [0.05, -0.03, 0.06]
+        radius: 0.055
+      - center: [0.12, -0.03, 0.06]
+        radius: 0.055
+      shoulder_lift_link:
+      - center: [0.025, 0.04, 0.025]
+        radius: 0.04
+      - center: [-0.025, 0.04, -0.025]
+        radius: 0.04
+      - center: [0.025, 0.04, -0.025]
+        radius: 0.04
+      - center: [-0.025, 0.04, 0.025]
+        radius: 0.04
+      - center: [0.08, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.11, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.14, 0.0, 0.0]
+        radius: 0.055
+      upperarm_roll_link:
+      - center: [-0.02, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.03, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.08, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.11, -0.045, 0.02]
+        radius: 0.03
+      - center: [0.11, -0.045, -0.02]
+        radius: 0.03
+      - center: [0.155, -0.045, 0.02]
+        radius: 0.03
+      - center: [0.155, -0.045, -0.02]
+        radius: 0.03
+      - center: [0.13, 0.0, 0.0]
+        radius: 0.055
+      elbow_flex_link:
+      - center: [0.02, 0.045, 0.02]
+        radius: 0.03
+      - center: [0.02, 0.045, -0.02]
+        radius: 0.03
+      - center: [-0.02, 0.045, 0.02]
+        radius: 0.03
+      - center: [-0.02, 0.045, -0.02]
+        radius: 0.03
+      - center: [0.08, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.14, 0.0, 0.0]
+        radius: 0.055
+      forearm_roll_link:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.05, -0.06, 0.02]
+        radius: 0.03
+      - center: [0.05, -0.06, -0.02]
+        radius: 0.03
+      - center: [0.1, -0.06, 0.02]
+        radius: 0.03
+      - center: [0.1, -0.06, -0.02]
+        radius: 0.03
+      - center: [0.15, -0.06, 0.02]
+        radius: 0.03
+      - center: [0.15, -0.06, -0.02]
+        radius: 0.03
+      wrist_flex_link:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.06, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.02, 0.045, 0.02]
+        radius: 0.03
+      - center: [0.02, 0.045, -0.02]
+        radius: 0.03
+      - center: [-0.02, 0.045, 0.02]
+        radius: 0.03
+      - center: [-0.02, 0.045, -0.02]
+        radius: 0.03
+      wrist_roll_link:
+      - center: [-0.03, 0.0, 0.0]
+        radius: 0.055
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.055
+      gripper_link:
+      - center: [-0.07, 0.02, 0.0]
+        radius: 0.05
+      - center: [-0.07, -0.02, 0.0]
+        radius: 0.05
+      - center: [-0.1, 0.02, 0.0]
+        radius: 0.05
+      - center: [-0.1, -0.02, 0.0]
+        radius: 0.05
+      r_gripper_finger_link:
+      - center: [0.017, -0.0085, -0.005]
+        radius: 0.012
+      - center: [0.017, -0.0085, 0.005]
+        radius: 0.012
+      - center: [0.0, -0.0085, -0.005]
+        radius: 0.012
+      - center: [0.0, -0.0085, 0.005]
+        radius: 0.012
+      - center: [-0.017, -0.0085, -0.005]
+        radius: 0.012
+      - center: [-0.017, -0.0085, 0.005]
+        radius: 0.012
+      l_gripper_finger_link:
+      - center: [0.017, 0.0085, -0.005]
+        radius: 0.012
+      - center: [0.017, 0.0085, 0.005]
+        radius: 0.012
+      - center: [0.0, 0.0085, -0.005]
+        radius: 0.012
+      - center: [0.0, 0.0085, 0.005]
+        radius: 0.012
+      - center: [-0.017, 0.0085, -0.005]
+        radius: 0.012
+      - center: [-0.017, 0.0085, 0.005]
+        radius: 0.012
+      torso_fixed_link:
+      - center: [-0.1, -0.07, 0.35]
+        radius: 0.12
+      - center: [-0.1, 0.07, 0.35]
+        radius: 0.12
+      - center: [-0.1, -0.07, 0.2]
+        radius: 0.12
+      - center: [-0.1, 0.07, 0.2]
+        radius: 0.12
+      - center: [-0.1, 0.07, 0.07]
+        radius: 0.12
+      - center: [-0.1, -0.07, 0.07]
+        radius: 0.12
+    collision_sphere_buffer: 0.0
+    self_collision_ignore:
+      base_link: [elbow_flex_link, torso_fixed_link, torso_lift_link]
+      torso_lift_link: [base_link, head_pan_link, shoulder_lift_link, shoulder_pan_link,
+        torso_fixed_link, torso_lift_link_collision_2]
+      torso_lift_link_collision_2: [shoulder_pan_link, torso_lift_link]
+      head_pan_link: [r_gripper_finger_link, torso_lift_link, upperarm_roll_link,
+        wrist_flex_link]
+      shoulder_pan_link: [shoulder_lift_link, torso_lift_link]
+      shoulder_lift_link: [r_gripper_finger_link, shoulder_pan_link, upperarm_roll_link]
+      upperarm_roll_link: [elbow_flex_link, shoulder_lift_link]
+      elbow_flex_link: [forearm_roll_link, upperarm_roll_link]
+      forearm_roll_link: [elbow_flex_link, wrist_flex_link, wrist_roll_link]
+      wrist_flex_link: [forearm_roll_link, wrist_roll_link]
+      wrist_roll_link: [gripper_link, wrist_flex_link]
+      gripper_link: [l_gripper_finger_link, r_gripper_finger_link, wrist_roll_link]
+      r_gripper_finger_link: [gripper_link]
+      l_gripper_finger_link: [gripper_link]
+      torso_fixed_link: [base_link]
+    self_collision_buffer: {base_link: 0.0, torso_lift_link: 0.0, torso_lift_link_collision_2: 0.0,
+      head_pan_link: 0.0, shoulder_pan_link: 0.0, shoulder_lift_link: 0.0, upperarm_roll_link: 0.0,
+      elbow_flex_link: 0.0, forearm_roll_link: 0.0, wrist_flex_link: 0.0, wrist_roll_link: 0.0,
+      gripper_link: 0.0, r_gripper_finger_link: 0.0, l_gripper_finger_link: 0.0, torso_fixed_link: 0.0}
+    mesh_link_names: []
+    use_global_cumul: true
+    cspace:
+      joint_names: [torso_lift_joint, shoulder_pan_joint, shoulder_lift_joint, upperarm_roll_joint,
+        elbow_flex_joint, forearm_roll_joint, wrist_flex_joint, wrist_roll_joint]
+      null_space_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      cspace_distance_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      max_acceleration: 15.0
+      max_jerk: 500.0
+      default_joint_position: [0.1931, 0.0, 0.1485, 0.0, 0.0, 0.0, 0.0, 0.0]

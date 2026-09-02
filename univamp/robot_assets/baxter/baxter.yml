@@ -1,0 +1,312 @@
+robot_cfg:
+  kinematics:
+    format_version: 2.0
+    urdf_path: /home/scoumar/Work/univamp/univamp/robot_assets/baxter/baxter_curobo.urdf
+    asset_root_path: ''
+    base_link: base
+    tool_frames: [right_gripper]
+    collision_link_names: [torso, head, right_upper_shoulder, right_lower_shoulder,
+      right_upper_elbow, right_lower_elbow, right_upper_forearm, right_lower_forearm,
+      right_wrist, right_hand, left_upper_shoulder, left_lower_shoulder, left_upper_elbow,
+      left_lower_elbow, left_upper_forearm, left_lower_forearm, left_wrist, left_hand,
+      pedestal, left_gripper_base, l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+      l_gripper_r_finger, l_gripper_r_finger_2, l_gripper_r_finger_tip, right_gripper_base,
+      r_gripper_l_finger, r_gripper_l_finger_2, r_gripper_l_finger_tip, r_gripper_r_finger,
+      r_gripper_r_finger_2, r_gripper_r_finger_tip]
+    collision_spheres:
+      torso:
+      - center: [-0.025, -0.1, 0.1]
+        radius: 0.25
+      - center: [-0.025, 0.1, 0.1]
+        radius: 0.25
+      - center: [-0.065, 0.0, 0.4]
+        radius: 0.23
+      head:
+      - center: [-0.02, 0.0, 0.0]
+        radius: 0.2
+      right_upper_shoulder:
+      - center: [0.0, 0.0, 0.25]
+        radius: 0.1
+      - center: [0.0, 0.0, 0.1]
+        radius: 0.1
+      right_lower_shoulder:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.1
+      right_upper_elbow:
+      - center: [-0.02, 0.0, 0.22]
+        radius: 0.08
+      - center: [-0.01, 0.0, 0.11]
+        radius: 0.08
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.08
+      right_lower_elbow:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.1
+      right_upper_forearm:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.08
+      - center: [0.0, 0.0, 0.22]
+        radius: 0.08
+      - center: [0.0, 0.0, 0.11]
+        radius: 0.08
+      right_lower_forearm:
+      - center: [0.0, 0.0, 0.03]
+        radius: 0.07
+      - center: [0.0, 0.0, -0.03]
+        radius: 0.07
+      right_wrist:
+      - center: [0.0, 0.0, 0.02]
+        radius: 0.07
+      - center: [0.0, 0.0, -0.04]
+        radius: 0.08
+      right_hand:
+      - center: [0.01, 0.0, -0.02]
+        radius: 0.05
+      left_upper_shoulder:
+      - center: [0.0, 0.0, 0.25]
+        radius: 0.1
+      - center: [0.0, 0.0, 0.1]
+        radius: 0.1
+      left_lower_shoulder:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.1
+      left_upper_elbow:
+      - center: [-0.02, 0.0, 0.22]
+        radius: 0.08
+      - center: [-0.01, 0.0, 0.11]
+        radius: 0.08
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.08
+      left_lower_elbow:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.1
+      left_upper_forearm:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.08
+      - center: [0.0, 0.0, 0.22]
+        radius: 0.08
+      - center: [0.0, 0.0, 0.11]
+        radius: 0.08
+      left_lower_forearm:
+      - center: [0.0, 0.0, 0.03]
+        radius: 0.07
+      - center: [0.0, 0.0, -0.03]
+        radius: 0.07
+      left_wrist:
+      - center: [0.0, 0.0, 0.02]
+        radius: 0.07
+      - center: [0.0, 0.0, -0.04]
+        radius: 0.08
+      left_hand:
+      - center: [0.01, 0.0, -0.02]
+        radius: 0.05
+      pedestal:
+      - center: [0.0, 0.0, -0.6]
+        radius: 0.5
+      left_gripper_base:
+      - center: [0.0, 0.02, 0.0]
+        radius: 0.04
+      - center: [0.0, -0.02, 0.0]
+        radius: 0.04
+      l_gripper_l_finger:
+      - center: [-0.005, 0.012, 0.008]
+        radius: 0.015
+      - center: [-0.005, -0.012, 0.008]
+        radius: 0.015
+      l_gripper_l_finger_2:
+      - center: [0.0, 0.01725, 0.03]
+        radius: 0.012
+      - center: [0.0, 0.01725, 0.05]
+        radius: 0.012
+      - center: [0.0, 0.01725, 0.07]
+        radius: 0.012
+      l_gripper_l_finger_tip:
+      - center: [0.01, -0.0045, -0.005]
+        radius: 0.014
+      - center: [-0.01, -0.0045, -0.005]
+        radius: 0.014
+      - center: [-0.01, -0.0045, -0.025]
+        radius: 0.014
+      - center: [0.01, -0.0045, -0.025]
+        radius: 0.014
+      l_gripper_r_finger:
+      - center: [0.005, 0.01, 0.008]
+        radius: 0.015
+      - center: [0.005, -0.01, 0.008]
+        radius: 0.015
+      l_gripper_r_finger_2:
+      - center: [0.0, -0.01725, 0.03]
+        radius: 0.012
+      - center: [0.0, -0.01725, 0.05]
+        radius: 0.012
+      - center: [0.0, -0.01725, 0.07]
+        radius: 0.012
+      l_gripper_r_finger_tip:
+      - center: [0.01, 0.0045, -0.005]
+        radius: 0.014
+      - center: [-0.01, 0.0045, -0.005]
+        radius: 0.014
+      - center: [-0.01, 0.0045, -0.025]
+        radius: 0.014
+      - center: [0.01, 0.0045, -0.025]
+        radius: 0.014
+      right_gripper_base:
+      - center: [0.0, 0.02, 0.0]
+        radius: 0.04
+      - center: [0.0, -0.02, 0.0]
+        radius: 0.04
+      r_gripper_l_finger:
+      - center: [-0.005, 0.012, 0.008]
+        radius: 0.015
+      - center: [-0.005, -0.012, 0.008]
+        radius: 0.015
+      r_gripper_l_finger_2:
+      - center: [0.0, 0.01725, 0.03]
+        radius: 0.012
+      - center: [0.0, 0.01725, 0.05]
+        radius: 0.012
+      - center: [0.0, 0.01725, 0.07]
+        radius: 0.012
+      r_gripper_l_finger_tip:
+      - center: [0.01, -0.0045, -0.005]
+        radius: 0.014
+      - center: [-0.01, -0.0045, -0.005]
+        radius: 0.014
+      - center: [-0.01, -0.0045, -0.025]
+        radius: 0.014
+      - center: [0.01, -0.0045, -0.025]
+        radius: 0.014
+      r_gripper_r_finger:
+      - center: [0.005, 0.01, 0.008]
+        radius: 0.015
+      - center: [0.005, -0.01, 0.008]
+        radius: 0.015
+      r_gripper_r_finger_2:
+      - center: [0.0, -0.01725, 0.03]
+        radius: 0.012
+      - center: [0.0, -0.01725, 0.05]
+        radius: 0.012
+      - center: [0.0, -0.01725, 0.07]
+        radius: 0.012
+      r_gripper_r_finger_tip:
+      - center: [0.01, 0.0045, -0.005]
+        radius: 0.014
+      - center: [-0.01, 0.0045, -0.005]
+        radius: 0.014
+      - center: [-0.01, 0.0045, -0.025]
+        radius: 0.014
+      - center: [0.01, 0.0045, -0.025]
+        radius: 0.014
+    collision_sphere_buffer: 0.0
+    self_collision_ignore:
+      torso: [head, l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+        l_gripper_r_finger, l_gripper_r_finger_2, l_gripper_r_finger_tip, left_gripper_base,
+        left_hand, left_lower_elbow, left_lower_forearm, left_lower_shoulder, left_upper_elbow,
+        left_upper_forearm, left_upper_shoulder, left_wrist, pedestal, r_gripper_l_finger,
+        r_gripper_l_finger_2, r_gripper_l_finger_tip, r_gripper_r_finger, r_gripper_r_finger_2,
+        r_gripper_r_finger_tip, right_gripper_base, right_hand, right_lower_elbow,
+        right_lower_forearm, right_lower_shoulder, right_upper_elbow, right_upper_forearm,
+        right_upper_shoulder, right_wrist]
+      head: [l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip, l_gripper_r_finger,
+        l_gripper_r_finger_2, l_gripper_r_finger_tip, left_gripper_base, left_hand,
+        left_lower_elbow, left_lower_forearm, left_upper_elbow, left_upper_forearm,
+        left_wrist, r_gripper_l_finger, r_gripper_l_finger_2, r_gripper_l_finger_tip,
+        r_gripper_r_finger, r_gripper_r_finger_2, r_gripper_r_finger_tip, right_gripper_base,
+        right_hand, right_lower_elbow, right_lower_forearm, right_upper_elbow, right_upper_forearm,
+        right_wrist, torso]
+      right_upper_shoulder: [l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+        l_gripper_r_finger, l_gripper_r_finger_2, l_gripper_r_finger_tip, left_gripper_base,
+        left_hand, left_lower_forearm, left_upper_forearm, left_wrist, right_lower_shoulder,
+        right_upper_elbow, torso]
+      right_lower_shoulder: [l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+        l_gripper_r_finger, l_gripper_r_finger_2, l_gripper_r_finger_tip, left_gripper_base,
+        left_hand, left_lower_forearm, left_upper_forearm, left_wrist, right_upper_elbow,
+        right_upper_shoulder]
+      right_upper_elbow: [l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+        l_gripper_r_finger, l_gripper_r_finger_2, l_gripper_r_finger_tip, left_gripper_base,
+        left_hand, left_lower_elbow, left_lower_forearm, left_upper_elbow, left_upper_forearm,
+        left_wrist, right_lower_elbow, right_lower_shoulder, right_upper_forearm]
+      right_lower_elbow: [l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+        l_gripper_r_finger, l_gripper_r_finger_2, l_gripper_r_finger_tip, left_gripper_base,
+        left_hand, left_lower_elbow, left_lower_forearm, left_upper_elbow, left_upper_forearm,
+        left_wrist, right_upper_elbow, right_upper_forearm]
+      right_upper_forearm: [l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+        l_gripper_r_finger_tip, left_gripper_base, left_hand, left_lower_elbow, left_lower_forearm,
+        left_lower_shoulder, left_upper_elbow, left_upper_forearm, left_upper_shoulder,
+        left_wrist, pedestal, right_lower_elbow, right_lower_forearm, right_wrist]
+      right_lower_forearm: [l_gripper_l_finger, left_gripper_base, left_hand, left_lower_elbow,
+        left_lower_forearm, left_lower_shoulder, left_upper_elbow, left_upper_forearm,
+        left_upper_shoulder, left_wrist, pedestal, right_upper_forearm, right_wrist]
+      right_wrist: [l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+        l_gripper_r_finger, left_gripper_base, left_hand, left_lower_elbow, left_lower_forearm,
+        left_lower_shoulder, left_upper_elbow, left_upper_forearm, left_upper_shoulder,
+        left_wrist, pedestal, right_hand, right_lower_forearm]
+      right_hand: [l_gripper_l_finger, left_gripper_base, left_lower_elbow, left_lower_forearm,
+        left_lower_shoulder, left_upper_elbow, left_upper_forearm, left_upper_shoulder,
+        left_wrist, pedestal, right_gripper_base, right_wrist]
+      left_upper_shoulder: [left_lower_shoulder, left_upper_elbow, r_gripper_l_finger,
+        r_gripper_l_finger_2, r_gripper_l_finger_tip, r_gripper_r_finger, r_gripper_r_finger_2,
+        r_gripper_r_finger_tip, right_gripper_base, torso]
+      left_lower_shoulder: [left_upper_elbow, left_upper_shoulder, r_gripper_l_finger,
+        r_gripper_l_finger_2, r_gripper_l_finger_tip, r_gripper_r_finger, r_gripper_r_finger_2,
+        r_gripper_r_finger_tip, right_gripper_base]
+      left_upper_elbow: [left_lower_elbow, left_lower_shoulder, left_upper_forearm,
+        r_gripper_l_finger, r_gripper_l_finger_2, r_gripper_l_finger_tip, r_gripper_r_finger,
+        r_gripper_r_finger_2, r_gripper_r_finger_tip, right_gripper_base]
+      left_lower_elbow: [left_upper_elbow, left_upper_forearm, r_gripper_l_finger,
+        r_gripper_l_finger_2, r_gripper_r_finger_tip, right_gripper_base]
+      left_upper_forearm: [left_lower_elbow, left_lower_forearm, left_wrist, pedestal,
+        r_gripper_l_finger, r_gripper_l_finger_2, r_gripper_l_finger_tip, r_gripper_r_finger,
+        r_gripper_r_finger_2, r_gripper_r_finger_tip, right_gripper_base]
+      left_lower_forearm: [left_upper_forearm, left_wrist, pedestal, r_gripper_l_finger,
+        r_gripper_l_finger_2, r_gripper_l_finger_tip, r_gripper_r_finger, r_gripper_r_finger_2,
+        r_gripper_r_finger_tip, right_gripper_base]
+      left_wrist: [left_hand, left_lower_forearm, pedestal, r_gripper_l_finger_2,
+        r_gripper_l_finger_tip, r_gripper_r_finger, r_gripper_r_finger_2, r_gripper_r_finger_tip,
+        right_gripper_base]
+      left_hand: [left_gripper_base, left_wrist, pedestal, r_gripper_l_finger_2, r_gripper_l_finger_tip,
+        r_gripper_r_finger, r_gripper_r_finger_2, r_gripper_r_finger_tip]
+      pedestal: [l_gripper_l_finger, l_gripper_l_finger_2, l_gripper_l_finger_tip,
+        l_gripper_r_finger, l_gripper_r_finger_2, l_gripper_r_finger_tip, left_gripper_base,
+        r_gripper_l_finger, r_gripper_l_finger_2, r_gripper_l_finger_tip, r_gripper_r_finger,
+        r_gripper_r_finger_2, r_gripper_r_finger_tip, right_gripper_base, torso]
+      left_gripper_base: [l_gripper_l_finger, l_gripper_r_finger, left_hand, r_gripper_l_finger,
+        r_gripper_l_finger_tip]
+      l_gripper_l_finger: [l_gripper_l_finger_2, l_gripper_l_finger_tip, left_gripper_base,
+        r_gripper_l_finger, r_gripper_r_finger_tip, right_gripper_base]
+      l_gripper_l_finger_2: [l_gripper_l_finger, l_gripper_l_finger_tip, r_gripper_r_finger_tip,
+        right_gripper_base]
+      l_gripper_l_finger_tip: [l_gripper_l_finger, r_gripper_l_finger, right_gripper_base]
+      l_gripper_r_finger: [l_gripper_r_finger_2, l_gripper_r_finger_tip, left_gripper_base]
+      l_gripper_r_finger_2: [l_gripper_r_finger, l_gripper_r_finger_tip]
+      l_gripper_r_finger_tip: [l_gripper_r_finger, r_gripper_r_finger, r_gripper_r_finger_2,
+        right_gripper_base]
+      right_gripper_base: [r_gripper_l_finger, r_gripper_r_finger, right_hand]
+      r_gripper_l_finger: [r_gripper_l_finger_2, r_gripper_l_finger_tip, right_gripper_base]
+      r_gripper_l_finger_2: [r_gripper_l_finger, r_gripper_l_finger_tip]
+      r_gripper_l_finger_tip: [r_gripper_l_finger]
+      r_gripper_r_finger: [r_gripper_r_finger_2, r_gripper_r_finger_tip, right_gripper_base]
+      r_gripper_r_finger_2: [r_gripper_r_finger, r_gripper_r_finger_tip]
+      r_gripper_r_finger_tip: [r_gripper_r_finger]
+    self_collision_buffer: {torso: 0.0, head: 0.0, right_upper_shoulder: 0.0, right_lower_shoulder: 0.0,
+      right_upper_elbow: 0.0, right_lower_elbow: 0.0, right_upper_forearm: 0.0, right_lower_forearm: 0.0,
+      right_wrist: 0.0, right_hand: 0.0, left_upper_shoulder: 0.0, left_lower_shoulder: 0.0,
+      left_upper_elbow: 0.0, left_lower_elbow: 0.0, left_upper_forearm: 0.0, left_lower_forearm: 0.0,
+      left_wrist: 0.0, left_hand: 0.0, pedestal: 0.0, left_gripper_base: 0.0, l_gripper_l_finger: 0.0,
+      l_gripper_l_finger_2: 0.0, l_gripper_l_finger_tip: 0.0, l_gripper_r_finger: 0.0,
+      l_gripper_r_finger_2: 0.0, l_gripper_r_finger_tip: 0.0, right_gripper_base: 0.0,
+      r_gripper_l_finger: 0.0, r_gripper_l_finger_2: 0.0, r_gripper_l_finger_tip: 0.0,
+      r_gripper_r_finger: 0.0, r_gripper_r_finger_2: 0.0, r_gripper_r_finger_tip: 0.0}
+    mesh_link_names: []
+    use_global_cumul: true
+    cspace:
+      joint_names: [left_s0, left_s1, left_e0, left_e1, left_w0, left_w1, left_w2,
+        right_s0, right_s1, right_e0, right_e1, right_w0, right_w1, right_w2]
+      null_space_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+        1.0, 1.0]
+      cspace_distance_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+        1.0, 1.0, 1.0]
+      max_acceleration: 15.0
+      max_jerk: 500.0
+      default_joint_position: [0.0, -0.55, 0.0, 1.284, 0.0, 0.2616, 0.0, 0.0, -0.55,
+        0.0, 1.284, 0.0, 0.2616, 0.0]
